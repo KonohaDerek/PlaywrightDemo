@@ -17,7 +17,8 @@ RUN if [ "$INSTALL_AZURE_CLI" = "true" ]; then bash /tmp/library-scripts/azcli-d
 # [Optional] Uncomment this section to install additional OS packages.
 USER root
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && npm i -D @playwright/test
+    && npm i -D @playwright/test \
+    && apt-get install -y ssh-askpass
 
 USER vscode
 RUN npx -q playwright install \
