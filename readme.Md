@@ -1,5 +1,10 @@
 # Playwright With DevContainer
 
+## 運行
+1. cd ${workspace}/PlaywrightDemo/
+2. code .
+3. 遠端總管 => container => + => open current Folder in container
+
 ## 設定 X11
 1. 執行 
   ```
